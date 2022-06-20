@@ -1,0 +1,10 @@
+<p>Périmètre R1: 60</p>
+Polygones\rectangle Object
+(
+    [longueur] => 4
+    [largeur] => 5
+    [perimetre] => 18
+    [surface] => 20
+)
+
+The End!
