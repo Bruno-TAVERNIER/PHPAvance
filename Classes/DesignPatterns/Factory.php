@@ -10,14 +10,14 @@ class Factory {
 
   protected function __construct() {}
 
-  public static function getInstance($ns = null){
+  public static function getInstance($ns = null) {
     //si pas d'instance on la crée (idem Singleton)
     if(is_null(self::$_instance)) self::$_instance = new self;
     self::$_instance->_ns = $ns;
     return self::$_instance;
   }
 
-  public function __call($methode, $arguments){
+  public function __call($methode, $arguments) {
     //première lettre en majuscule
     $class = ucfirst($this->_ns.$methode);
     if(class_exists($class, false)){
